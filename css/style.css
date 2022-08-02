@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 60vh;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(7, 217, 240, 0.637);
+    border-radius: 3px;
+}
+
+.forFlex {
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(51, 172, 142, 0.6);
+    box-shadow: 4px 4px 15px black;
+    border-radius: 5px;
+}
+
+header {
+    margin: 3em;
+    text-align: center;
+}
+
+header h1,
+p {
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 2.48rem;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+main {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+
+form input[type=text] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+div {
+    margin-bottom: 1px;
+}
+
+form input[type=submit] {
+    width: 28%;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: white;
+}
+
+form input[type=submit]:hover {
+    background-color: rgba(51, 172, 142, 0.6);
+    color: white;
+    border: 1px solid #CCC;
+    transition: .5s;
+
+}
+
+form input[type=submit]:active {
+    background-color: white;
+    color: rgb(255, 0, 0);
+    transition: .1;
+}
+
+span {
+    margin-left: 20px;
+}
+
+.fa-solid,
+.fa-trash {
+    font-size: 1.5rem;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.02rem;
+    text-transform: capitalize;
+}
+
+#message{
+    font-size: 1.5rem;
+}
+@media screen and (max-width:768px) {
+    .container {
+       margin: 0;
+       max-width: 100%;
+       height: 102vh;
+       border-radius: 0;
+    }
+    main{
+        margin: 0;
+       
+    }
+}
+@media screen and (max-width:450px){
+    
+    header h1 {
+        font-size: 2.1rem;
+    }
+    header p {
+        font-size: .9em;
+    }
+    #message{
+        font-size: 1.2rem;
+    }
+    main{
+        margin: 0;
+    }
+    form input[type=text] {
+        font-size: .9rem;
+        width: 50%;
+    }
+    form input[type=submit] {
+        width: 45%;
+        font-size: .9rem;
+    }
+    input {
+        width: 50%;
+        font-size: .9rem;
+    }
+
+}
+@media screen and (max-width:385px) {
+    .container {
+        padding-top: 10px;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0;
+        border-radius: none;
+    }
+    .forFlex {
+        padding: 40px 1% 50% 1%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(51, 172, 142, 0.6);
+        box-shadow: 4px 4px 15px black;
+        border-radius: 5px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    header h1 {
+        font-weight: 400;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+    header p {
+        font-size: 0.79rem;
+        font-weight: 300;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    form input[type=text] {
+        font-size: .9rem;
+        width: 50%;
+    }
+    form input[type=submit] {
+        width: 45%;
+        font-size: .9rem;
+    }
+    input {
+        width: 50%;
+        font-size: .9rem;
+    }
+    
+}
